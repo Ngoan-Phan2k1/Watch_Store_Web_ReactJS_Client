@@ -1,0 +1,138 @@
+.wrapper{
+    max-width: 100%;
+    width: 1230px;
+    margin: auto;
+    //box-shadow: 0 2px 6px #555;
+    padding: 0 15px;
+
+    h2{
+        text-align: center;
+        margin: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+
+
+    .date-box{
+        display: flex;
+        flex-wrap: nowrap;              /* Thiết lập chế độ wrap, khi các phần tử vượt qua kích thước hướng chính*/
+        justify-content: space-between; 
+
+        select{
+            margin-top: 20px;
+            width: 13rem;
+            height: 5rem;
+            //border-bottom: 0px;
+            border-radius: 3px;
+            box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
+        
+        }
+
+
+    }
+
+    
+
+    .history-page{
+        overflow-x: auto;
+    
+        h2, h4{
+            text-align: center;
+            margin: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+
+        }
+    
+        table{
+            margin: auto;
+            width: 100%;
+    
+            .link{
+                
+
+                &:hover{
+                    cursor: pointer;
+                    color: rgb(3, 165, 206);
+                }
+            }
+        }
+    
+        table,th,tr,td{
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+        }
+    
+        th,td{
+            text-align: center;
+            padding: 10px;
+            text-transform: capitalize;
+        }
+
+        
+    
+        
+    }
+
+    .doanh-thu{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: crimson;
+        font-size: 100px;
+    }
+
+
+    .history-page2{
+        margin-top: 100px;
+        overflow-x: auto;
+    
+        img{
+            width: 70px;
+            height: 100px;
+            object-fit: cover;
+        }
+    
+        h2, h4{
+            text-align: center;
+            margin: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            span{
+                color: crimson;
+            }
+        }
+    
+        table{
+            margin: auto;
+            width: 100%;
+            .th-name{
+                width: 20%;
+            }
+    
+            .th-mail{
+                width: 43%;
+            }
+            .th-soluong{
+                width: 27%;
+            }
+    
+            .link{
+                color: rgb(3, 165, 206);
+            }
+        }
+    
+        table,th,tr,td{
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+        }
+    
+        th,td{
+            text-align: center;
+            padding: 10px;
+            text-transform: capitalize;
+        }
+        
+    }
+}

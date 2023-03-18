@@ -1,0 +1,57 @@
+
+.wrapper{
+    max-width: 100%;
+    width: 1230px;
+    margin: auto;
+    //box-shadow: 0 2px 6px #555;
+    padding: 0 15px;
+}
+
+.history-page{
+    overflow-x: auto;
+
+    img{
+        width: 70px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    h2, h4{
+        text-align: center;
+        margin: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+
+    }
+
+    table{
+        margin: auto;
+        width: 100%;
+        .th-name{
+            width: 20%;
+        }
+
+        .th-mail{
+            width: 43%;
+        }
+        .th-soluong{
+            width: 27%;
+        }
+
+        a{
+            color: rgb(3, 165, 206);
+        }
+    }
+
+    table,th,tr,td{
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+    }
+
+    th,td{
+        text-align: center;
+        padding: 10px;
+        text-transform: capitalize;
+    }
+    
+}

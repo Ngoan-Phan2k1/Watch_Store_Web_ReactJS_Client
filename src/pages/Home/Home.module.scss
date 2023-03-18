@@ -1,0 +1,403 @@
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+
+    img{
+        height: 340px;
+        width: 285px;
+    }
+}
+
+.wrapper-slider{
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.title-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1430px;
+    margin-bottom: 1.5em;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    h3{
+        color: #555555;
+    }
+
+    
+}
+
+
+.center-title{
+    display: flex;
+    align-items: center;
+
+    b{
+        background-color: currentColor;
+        display: block;
+        flex: 1;
+        height: 2px;
+        opacity: .1;
+        font-weight: bolder;
+    }
+
+    span{
+        font-size: 145%;
+        text-transform: uppercase;
+        margin: 0 15px;
+    }
+}
+
+.title-main{
+    text-align: center;
+    
+    i{
+        
+        opacity: .6;
+        speak: none!important;
+        display: inline-block;
+        font-family: fl-icons!important;
+        font-style: normal!important;
+        font-variant: normal!important;
+        font-weight: 400!important;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-transform: none!important;
+    }
+
+
+    .icon-start-o{
+        margin-right: 0.4em;
+        &::before{
+            content: "î€†";
+        }
+    }
+
+    .icon-start{
+        margin-right: 0.4em;
+        
+    }
+
+    
+    
+}
+
+.inner{
+    position: relative;
+    //width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 auto;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.badge-container{
+    position: absolute;
+    z-index: 21;
+    left: 0;
+    top: 0;
+    margin: 30px 0 0;
+}
+
+.badge-circle{
+    margin-left: 0em;
+    backface-visibility: hidden;
+    display: table;  
+    pointer-events: none;
+    z-index: 20;
+    height: 2.8em;
+    width: 2.8em;
+    //background-color: blue;
+}
+
+.icon-circle{
+    background-color: #dd3333;
+    border-radius: 999px;
+    color: #fff;
+    display: table-cell;
+    font-weight: bolder;
+    height: 100%;
+    line-height: .85;
+    padding: 2px;
+    text-align: center;
+    transition: background-color .3s,color .3s,border .3s;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.box-image{
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-text{
+    padding: 15px 15px 20px;
+    z-index: 1;
+}
+
+.title-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    p{
+        line-height: 1.8;
+        display: flex;
+        margin-bottom: 0.1em;
+        margin-top: 0.1em;
+        //align-items: center;
+        justify-content: center;
+    }
+}
+
+.price-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price{
+    display: block;
+    line-height: 1;
+}
+
+.amount{
+    display: flex;
+    color: #ED1C24;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.vnd{
+    text-decoration: underline;
+    font-size: 1.6rem;
+    
+}
+
+.Card {
+    border: 1px solid #fff;
+    background: black;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    color: #fff;
+}
+
+.Card-top h1{
+    //font-size: 1rem;
+    //margin: 10px 20px;
+    background-size: cover;
+}
+
+.Card-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.box-text-one{
+    transition: opacity .3s,transform .3s,background-color .3s;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+}
+.box-logo{
+    text-align: center;
+    // width: 13%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    transition: opacity .3s,transform .3s,background-color .3s;
+
+    .logo_sheen{
+        height: 360px;
+        width: 360px;
+        display: inline-block;
+        height: auto;
+    }
+
+    img{
+        height: 195px;
+        width: 195px;
+        display: inline-block;
+        height: auto;
+    }
+}
+
+.box-content-text{
+    position: relative;
+    display: block;
+    // padding-left: 10px;
+    // padding-right: 10px;
+    //min-height: 1085px;
+    //background-color: aquamarine;
+    text-align: center;
+    font-size: .9em;
+    padding-bottom: 1.4em;
+    padding-top: 0.7em; 
+    width: 100%;
+    //background-color: #ED1C24;
+}
+
+.box-content-text-inner{
+    margin-left: auto;
+    margin-right: auto;
+
+    h1{
+        line-height: 1.3;
+        margin-bottom: 0.1em;
+        margin-top: 0.1em;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.6em;
+    }
+
+    span{
+        color: #000000;
+    }
+}
+
+.text-inner-center{
+    text-align: center;
+
+    div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+.divider{
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0,.1);
+    display: block;
+    height: 3px;
+    margin: 1em 0;
+    width: 100%;
+
+    &::after{
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+.banner{
+    max-width: 100%;
+    position: relative;
+    min-height: 800px;
+
+    padding: 0 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    //background-color: aqua;
+
+}
+
+.banner-inner{
+
+    position: absolute;
+    //background-color: yellowgreen;
+    padding: 0!important;
+
+    height: 100%;
+    left: 0;
+    margin: 0!important;
+    //padding: 0px 30px;
+    //position: relative;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.banner-bg{
+    position: absolute;
+    //position: relative;
+    //background-color: #6b6189;
+    background-color: transparent;
+    height: 100%;
+    left: 0;
+    margin: 0!important;
+    //padding: 0!important;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    padding: 0 10px;
+    
+    
+}
+
+
+.bg-loaded{
+    //background-image: url(https://www.casio-vietnam.vn/wp-content/uploads/2022/09/z3707803900865_8ad735ef0903ca0ff4728664878274e4.jpg);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat!important;
+    background-size: cover;
+    left: 0;
+    margin: 0!important;
+    padding: 0!important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    background-position: center center;
+    //background-attachment: fixed;
+
+    //background-color: #dd3333;
+}
+
+.upload-banner-1{
+    background-image: url(https://www.casio-vietnam.vn/wp-content/uploads/2022/09/z3707791100260_bace62eb9d84a8368ede1694ba485683.jpg);
+}
+
+.upload-banner-2{
+    background-image: url(https://www.casio-vietnam.vn/wp-content/uploads/2020/09/casio-mens-outdoor-watch-PRT-B50-pc.jpg);
+}
+
+.upload-banner-3{
+    background-image: url(https://www.casio-vietnam.vn/wp-content/uploads/2022/09/z3707803900865_8ad735ef0903ca0ff4728664878274e4.jpg);
+}
+
+.upload-banner-4{
+    background-image: url(https://www.casio-vietnam.vn/wp-content/uploads/2022/09/z3707815702183_6aa94d8fa22dc1d76488db583f31ba00.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

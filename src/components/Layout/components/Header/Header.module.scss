@@ -1,0 +1,208 @@
+.wrapper {
+    --search-height: 46px;
+    --search-top-spacer: 9px;
+
+    width: 100%;
+    height: var(--default-layout-header-height);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 16%);
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    //margin-left: -120px;
+    height: 100%;
+    width: var(--default-layout-width);
+    //padding: 0 var(--default-layout-horizontal-spacer);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        width: 23.4rem;
+        height: 13rem;
+    }
+}
+
+.inner-center{
+    display: flex;
+    margin-left: -40px;
+    
+
+    li{
+        font-weight: 900;
+        padding: 0 15px;
+        font-size: 1.6rem;
+
+        &:hover{
+            cursor: pointer;
+            color: crimson;
+        }
+    }
+}
+
+.search-result,
+.search {
+    width: 361px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    height: var(--search-height);
+    padding-left: 16px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 92px;
+    border: 1.5px solid transparent;
+
+    input {
+        flex: 1;
+        height: 100%;
+        color: var(--black);
+        font-size: 1.6rem;
+        padding: 12px 0;
+        background-color: transparent;
+        caret-color: var(--black);
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: rgba(22, 24, 35, 0.75);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: var(--search-top-spacer);
+        right: 52px;
+        width: 1px;
+        height: calc(var(--search-height) - var(--search-top-spacer) * 2);
+        background-color: rgba(22, 24, 35, 0.12);
+    }
+
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.search-result {
+    width: 361px;
+}
+
+.search-title {
+    padding: 5px 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+}
+
+.clear,
+.loading {
+    position: absolute;
+    right: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(22, 24, 35, 0.34);
+    right: calc(52px + 16px);
+}
+
+.search-btn {
+    width: 52px;
+    height: 100%;
+    border-top-right-radius: 92px;
+    border-bottom-right-radius: 92px;
+    font-size: 1.8rem;
+    color: rgba(22, 24, 35, 0.34);
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+
+    &:active {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 28px;
+    padding: 4px 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.custom-text{
+    margin-right: -16px;
+}
+
+
+
+
+.action {
+    display: flex;
+
+    .span{
+        position: absolute;
+        background: crimson;
+        color:  white;
+        //left: 1398px;
+        border-radius: 20px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    
+
+    .pd-lr{
+        margin-top: 0.8rem;
+        padding: 0 1.5rem;
+
+        .custom-cart{
+            // margin-left: 8px;
+        
+            
+            cursor: pointer;
+            position: relative;
+        
+            img{
+                width: 20px;
+                height: 20px;
+                transition: 0.2s linear;
+            }
+
+            .cart_num{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translate(50%, 50%);
+                font-size: 1.2rem;
+                width: max-content;
+                font-weight: 300;
+                color: #fff;
+
+
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 999px;
+                    background-color: #47474c;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.3s ease;
+                    z-index: -1;
+                    transition: 0.2s linear;
+                }
+            }
+            
+            
+        }
+    } 
+
+
+}
