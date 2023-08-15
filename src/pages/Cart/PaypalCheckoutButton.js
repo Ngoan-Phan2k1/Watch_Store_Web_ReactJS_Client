@@ -5,7 +5,7 @@ const PaypalCheckoutButton = (props) => {
     // const { sanpham } = props;
     // console.log(sanpham);
     const { total } = props;
-    console.log(total);
+    // console.log(total);
     
     const [paidFor, setPaidFor] = useState(false);
     const [error, setError] = useState(null);
@@ -74,7 +74,7 @@ const PaypalCheckoutButton = (props) => {
 
                 onApprove={async(data, actions) => {
                     const order = await actions.order.capture();
-                    console.log("order", order)
+                    // console.log("order", order)
 
                     handleApprove(data.orderID);
                 }}

@@ -51,7 +51,7 @@ function ToTalSale() {
     const [total, setTotal] = useState(0);
     const [sumOneBill, setSumOneBill] = useState([]);
     const [data, setData] = useState([]);
-    console.log(data);
+    //console.log(data);
     //console.log(total);
     const data1 = [
         {
